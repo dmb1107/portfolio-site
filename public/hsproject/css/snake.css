@@ -1,0 +1,401 @@
+@charset "UTF-8";
+body{
+	background:url(../images/greenvector.jpg);
+	background-repeat:repeat;
+	background-size:cover;
+	font-family: 'Josefin Slab', serif;
+	margin:0;
+	padding:0;
+	height:100%;
+	overflow:hidden;
+}
+a.hovertext{
+	color:#0B0;
+	text-decoration:none;
+	cursor:help;
+}
+a.hovertext:hover{
+	text-decoration:none;	
+	color:#080;
+	background-color:#555;
+}
+div.image1{
+	padding-left:1px;
+	float: right;
+	transition: all .2s ease-in-out;
+}
+div.image1:hover{
+	transform:scale(2.5,2.5) translateX(-60px);
+	cursor:
+}
+li.leaderButton{
+	float:right;
+}
+
+/*image zoom*/
+.zoom {        
+	transition: all 0.35s ease-in-out;         
+	cursor: zoom-in;  
+}     
+
+.zoom:hover, .zoom:active, .zoom:focus {
+	transform: scale(2.5);    
+	position:relative;      
+	z-index:100;  
+}
+/*image zoom*/
+div.textcontainer{
+	height:auto;
+	margin-bottom:40px;
+	padding-left:8px;
+	padding-right:8px;
+	margin-top:20px;
+	margin-left:40px;
+	margin-right:40px;	
+	background-color:white;
+	border:#BBB 5px solid;
+}
+div.textcontainer p{
+	padding-left:15px;
+	padding-right:15px;
+	font-weight:400;
+	font-size:22px;
+	color:black;
+}
+div.textcontainer h1{
+	font-size:32px;
+	padding-left:15px;
+	padding-right:15px;
+	font-family: 'Fredericka the Great', cursive;
+}
+div.textcontainer h2{
+	font-size:20px;
+	padding-left:15px;
+	padding-right:15px;
+	font-family: 'Fredericka the Great', cursive;
+}
+div.textcontainer h3{
+	padding-left:15px;
+	padding-right:15px;
+	font-weight:700;
+	font-size:22px;
+	color:black;
+}
+.date{
+	padding-top:10px;
+	text-align:right;
+	font-size:15px;	
+}
+/*Header CSS*/
+.headerbackground{
+	height:60px;
+	background:#444;
+	text-align:left;
+	font-size:60px;
+	font-weight:700;
+	color:#999;
+	padding-top:5px;
+	border-bottom:#080 4px solid;
+	cursor:default;
+}
+a.headerlink{
+	text-align:left;
+	padding-left:14px;
+	font-size:50px;
+	font-weight:700;
+	color:#0C0;
+	cursor:default;
+	text-decoration: none;
+	transition: color .4s;
+}
+a.headerlink:hover{
+	color: #999;
+}
+/*blur menu CSS*/
+.bContainer ul {
+	text-align: left;
+	display: inline-block;
+	font-size: 150%;
+	list-style-type: none;
+	margin: 20px auto;
+	padding: 0px;
+ }
+ .bContainer{
+	text-align:center;
+	width: auto;
+	margin-top:100px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0px;
+}
+.blurmenu {
+	list-style-type:none;
+}
+.blurmenu li{
+    font-size: 80px;
+    display: block;
+}
+.blurmenu li a{
+	text-align:left;
+	text-decoration:none;
+	color:transparent;
+	text-transform:uppercase;
+	text-shadow: 0px 0px 7px white;
+	transition: all 0.3s ease-in-out;
+}
+.blurmenu:hover li a{
+	text-shadow: 0px 0px 5px #0d1a3a;	
+}
+.blurmenu li a:hover{
+	color: #fff;
+	text-shadow: 0px 0px 1px #fff;
+	padding-left: 20px;
+}
+/*Dropdown menu*/
+.menuul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	height:auto;
+    background-color: #444;
+}
+.menuli{
+	float:left;
+}
+.menuli a, .dropbutton{
+	text-align:center;
+	font-size:25px;
+	display:block;
+	color:white;
+    padding: 10px 16px;
+	text-decoration: none;
+}
+
+.menuli a:hover, .dropdown:hover .dropbutton {
+    background-color: #080;
+}
+.dropdown-stuff{
+	display:none;
+	font-size:25px;
+	position:absolute;
+	background-color:#444;
+	min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-stuff a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-stuff a:hover {
+	background-color: #999;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown:hover .dropdown-stuff {
+    display: block;
+}
+/*footer CSS*/
+.footer{
+	font-family: Josefin Slab;
+	font-size:16px;
+	font-color:white;
+	list-style-type: none;	
+	text-decoration: none;
+	color:white;
+	height:32px;
+	width:100%;
+	padding-bottom:2px;
+}
+.footer ul{
+	height:20px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;	
+}
+.footer li {
+    display: inline-block;
+}
+.footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 6px;
+	padding-left:10px;
+    text-decoration: none;
+}
+.footer li a:hover{
+	background-color:white;	
+	color:black;
+}
+/*transition CSS*/
+a.button1{
+	display:inline-block;
+	cursor: pointer;
+	width: auto;
+	height: auto;
+	background: #3CF;
+	color: white;
+	position: relative;
+	font-weight: bold;
+	font-size: 75px;
+	padding: 25px;
+	margin: 10px;
+	border-radius: 5px;
+	text-align:center;
+	transition: width 1s, height 1s, font-size 1s, padding 1s, color 1s, background 1s;
+	text-decoration: none;
+}
+a.button1:hover{
+	width: auto;
+	height: auto;
+	font-size: 110px;
+	padding: 40px;
+	background:#30F;
+}
+/*
+JavaScript Snake
+By Patrick Gillespie
+http://patorjk.com/games/snake
+*/
+
+#game-area {
+	margin:0px;
+	padding:0px;
+	float:right;
+}
+
+#high-score {
+    position: relative;
+    left: 200px;
+    bottom: 50px;
+}
+
+#mode-wrapper {
+    color: #ffffff;
+    font-family: Verdana, arial, helvetica, sans-serif; 
+    font-size: 14px;
+    display:none;
+}
+
+#game-area:focus { outline: none; }
+
+a.snake-link, a.snake-link:link, a.snake-link:visited {
+  color: #FCFC54; 
+}
+
+a.snake-link:hover {
+  color: #FfFf54; 
+}
+
+.snake-pause-screen {
+    font-family: Verdana, arial, helvetica, sans-serif; 
+    font-size: 14px;
+    position:absolute;
+    width:300px;
+    height:80px;
+    text-align:center;
+    top:50%;
+    left:50%;
+    margin-top:-40px;
+    margin-left:-150px;
+    display:none;
+    background-color:black;
+    color:white;
+}
+
+.snake-panel-component {
+    position: absolute;
+    font-family: Verdana, arial, helvetica, sans-serif; 
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    margin: 0px;
+}
+
+.snake-snakebody-block {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    position: absolute;
+    border: 0px solid #444;
+    background-repeat: no-repeat;
+	box-shadow: 0 0 0 1px #444 inset;
+}
+
+.snake-snakebody-alive {
+    background-color:#0C0;
+   	background-size:20px;
+}
+.snake-snakebody-dead {
+   background-image: url('./images/deadblock.png');
+}
+
+.snake-food-block {
+    margin: 0px;
+    padding: 0px;
+	box-shadow: 0 0 0 1px #444 inset;
+    position: absolute;
+	background-color:#FFF;
+	background-size:20px;
+	position:absolute;
+}
+
+.snake-playing-field {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    background-color: #444;
+    outline: 5px solid white;
+}
+
+.snake-game-container {
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    border-style: none;
+    zoom: 1;
+    background-image: url(images/greenvector.jpg);
+    position: fixed;
+}
+            
+.snake-welcome-dialog {
+    padding: 8px;
+    margin: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    /*height: 150px;*/
+    margin-top: -100px;
+    margin-left: -158px;
+    text-align: center;
+    display: block;
+}
+
+.snake-try-again-dialog {
+    padding: 8px;
+    margin: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 100px;
+    margin-top: -75px;
+    margin-left: -158px;
+    text-align: center;
+    display: none;
+    }

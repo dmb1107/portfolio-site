@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="UTF-8">
+	<title>Presentation 2</title>
+    <script src="https://use.fontawesome.com/1f4f3a0067.js"></script>
+	<link rel="stylesheet" type="text/css" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=*&amp;"></script>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" type="text/css" title="tree" href="../css/tree.css">
+    <link rel="alternate stylesheet" type="text/css" title="violet" href="../css/violet.css">
+    <link rel="alternate stylesheet" type="text/css" title="sunglow" href="../css/sunglow.css">
+    <link rel="alternate stylesheet" type="text/css" title="lime" href="../css/lime.css">
+    <link rel="alternate stylesheet" type="text/css" title="dark" href="../css/dark.css">
+	<script src="../js/styleswitch.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+	<script type="text/javascript">
+	$(document).ready(function(){
+    	$(".btn").each(function(){
+       		$(this).click(function(){
+         		$(this).addClass("active");
+          		$(this).siblings().removeClass("active");
+       			});
+    	});
+	});
+	$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+	</script>
+    <style>
+/*Start of Bootstrap*/
+
+/*End of Bootstrap*/
+</style>
+</head>
+<body style="overflow:auto" onload="PR.prettyPrint()">
+	<div id="wrapper">
+		<div class="overlay"></div>
+        <h1 class="siteName"><a href="../index.html" class="headerlink">DaveBecker</a>.xyz</h1>
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a class="sidebar-label" href="http://dave-becker.com"></a>
+                </li>
+                <li>
+                    <a href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="../about.html"><i class="fa fa-fw fa-user-circle-o"></i> About</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-file-o"></i> Presentations <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Presentations</li>
+                    <li><a href="project1.html">Presentation 1</a></li>
+                    <li><a href="project2.html">Presentation 2</a></li>
+                    <li><a href="project3.html">Presentation 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="../references"><i class="fa fa-fw fa-bookmark"></i> References</a>
+                </li>
+                <li>
+                    <a href="../snake.php"><i class="fa fa-fw fa-gamepad"></i> Snake</a>
+                </li>
+                <li>
+                    <a href="../leaderboards.php"><i class="fa fa-fw fa-globe"></i> Snake Leaderboards</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-sliders"></i> Other Layouts <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Experimental Layouts</li>
+                    <li><a href="../indexold.html">Layout 1</a></li>
+                    <li><a href="../transitions.html">Layout 2</a></li>
+                    <li><a href="../index2.html">Layout 3</a></li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" id="contentborder">
+                        <div class="date">March 10, 2017</div>
+                        <h4>Explaining the Code</h4>
+    <p><!-- <a onclick="return false;" data-toggle="tooltip" class="hovertext" title="#">#</a> -->
+    </p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first step I took towards designing my website was to research website design theory. Web design theory refers to the layout of the website and what the viewers will like or dislike. Since this is my first website, I went with a simple design consisting of a logo, a navigation bar, and a dropdown menu.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once I had a design in mind, the next step was to learn the most basic and important programming language used in web design, HTML. This language is used to structure a website and add very basic, unembellished things to the page. The next language I had to learn was CSS. This language was a little bit harder to learn because there were a lot more commands than HTML. CSS builds onto the HTML code by adding formatting, color, positioning, etc. CSS is what sets a basic website apart from something beautiful. For example, here are a few side-by-side pictures of my website with the CSS coding included and with the CSS coding removed:     </p>
+	<ul class="list-inline gallery">
+  	 <li style="list-style: none;display: inline;float:left;margin-right:10px;"><a href="../images/indexCSS.png"><img class="thumbnail zoom" src="../images/indexCSS.png" style="max-width:230px; border: 2px solid black;padding:0;" alt="index with CSS"></a></li>
+     <li style="list-style: none;display: inline;float:left;margin-right:10px;"><a href="../images/indexnoCSS.png"><img class="thumbnail zoom" src="../images/indexnoCSS.png" style="max-width:230px; border: 2px solid black;padding:0;"alt="index without CSS"></a></li>
+     <li style="list-style: none;display: inline;float:left"><a href="../images/indexCSS.png"><img class="thumbnail zoom" src="../images/pres1CSS.png" style="max-width:230px; border: 2px solid black;padding:0;margin-right:10px;"alt="index with CSS"></a></li>
+     <li style="list-style: none;display: inline;"><a href="../images/indexnoCSS.png"><img class="thumbnail zoom" src="../images/pres1noCSS.png" style="max-width:230px; border: 2px solid black;padding:0;float:left;"alt="index without CSS"></a></li>
+    </ul> 
+    </p>
+    <br />
+    <br />
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This shows how important CSS is in creating a modern website. CSS is normally applied using a separate file called a "stylesheet." This stylesheet is linked to the page and contains all of the CSS coding that can be referenced at anytime in the main HTML file.
+    </p>
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After tens of hours of research, I had an extensive knowledge of both of these languages and began making my website. With a combination of these languages I was able to make a fully functional basic website with menus, animations, text, and other things.
+    </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have attached some code from my website below. You can hover over it for an explanation on what each line does. Many lines of the CSS code have been removed and only one page of my website is shown as the focus of this page is to explain the things visible in the Presentation 1 page only.</p>
+    <?prettify lang=html linenums=false?>
+	<pre class="theme-turnip" style="line-height:130%; padding:15px;">
+	<span class="nocode"><h5 style="text-align:center;">HTML Code for POL 1 Page</h5></span>
+
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the document type to HTML. Other options include CSS or XHTML." >&lt;!doctype html&gt;
+&lt;html></a>
+&lt;head>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the title of the webpage. It is displayed in the tab menu of the browser.">&lt;title>Presentation 1&lt;/title></a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Sets the website dimensions to equal the screen size of the device.">&ltmeta name="viewport" content="width=device-width, initial-scale=1"></a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="These lines attach the CSS style sheets for formatting and import the custom fonts used on this webpage.">&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">&lt/script>
+&ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">&lt/script>
+&ltscript src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=sunburst">&lt/script>
+&ltlink rel="stylesheet" type="text/css" href="prettify.css">
+&ltscript type="text/javascript" src="prettify.js">&lt/script>
+&ltlink rel="stylesheet" type="text/css" href="css/style.css"/>
+</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This is the section where CSS can be included, however it is redundant to put it here if a stylesheet is attached.">&ltstyle></a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This is used to import the fonts from Google's large library of web fonts.">&commat;import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700');
+&commat;import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');</a>
+&lt;/style>
+&lt;/head>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the body to allow scrolling when the text goes outside of the page.">&lt;body style="overflow:auto"></a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This line links to the stylesheet, retrieving the 'headerbackground' class which styles the top of the page and the navbar.">&lt;div class="headerbackground"></a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the text at the top of the header to the name of my website and tells it to link to my homepage when pressed. It also links to a class in the stylesheet that causes it to change colors when hovered over.">&lt;a class="headerlink" href="index.html">DaveBecker&lt;/a>.xyz</a>&lt;/div&gt;
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="The &quot;ul&quot; class creates an unordered list. An unordered list creates a list with bullet points instead of numbers. The menuul styling hides the bullet points and aligns it horizontally. This will be the navigation bar.">&lt;ul class="menuul"&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="These lines create the buttons in the navbar. The menuli class styles the button and connects with another class to change the color while being hovered over. The &quot;a href&quot; class sets where to link the user when it is pressed.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="menuli"&gt; &lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+     &lt;li class="menuli"&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This calls the dropdown class and sets the styling for the dropdown buttons.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="dropdown"&gt;</a>
+    <a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This creates the Presentation button.">	&lt;a href="javascript:void(0)" class="dropbutton"&gt;Presentations&lt;/a&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This links the group to the dropdown-stuff class which hides the buttons unless hovered over.">	&lt;div class="dropdown-stuff"&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="These lines create the buttons and set them to link to the correct page.">	   &lt;a href="project1.html"&gt;Presentation 1&lt;/a&gt;
+	   &lt;a href="project2.html"&gt;Presentation 2&lt;/a&gt;
+           &lt;a href="project3.html"&gt;Presentation 3&lt;/a&gt;</a>
+    	&lt;/div&gt;
+	&lt;/li&gt;
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This creates the transition dropdown menu the same way the last one was created.">     &lt;li class="dropdown" style="float:right;"&gt;
+	&lt;a href="javascript:void(0)" class="dropbutton"&gt;Alternative Layouts&lt;/a&gt;
+	&lt;div class="dropdown-stuff"&gt;
+    	    &lt;a href="transitions.html"&gt;Transitions&lt;/a&gt;
+      	    &lt;a href="index2.html"&gt;Alternative&lt;/a&gt;
+    	&lt;/div&gt;
+     &lt;/li&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This line adds another button using the same method as above.">     &lt;li class="menuli"&gt; &lt;a href="references.html"&gt;References&lt;/a&gt;&lt;/li&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This closes the unordered list.">&lt;/ul&gt;</a>
+
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This creates the container where the text will go into.">&lt;div class="textcontainer"&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Connects the text to the date class which sets the size and positions it on the right side.">     &lt;div class="date"&gt;January 25, 2017&lt;/div&gt;</a>
+     <a onclick="return false;" data-toggle="tooltip" class="hovertext" title="The &lt;h5&gt; class is a default HTML class that I edited to change the font and size of the header.">&lt;h5&gt;Why am I making this website?&lt;/h5&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="The &lt;p&gt; class is the default HTML class for paragraphs. I edited it in the CSS file to change the font, size, and positioning.">     &lt;p&gt;I am making this website because I think i&rsquo;s fun to experiment with coding and I&rsquo;ve always wanted to have a solid understanding of web development. After starting this project and realizing how much fun designing websites is, I am considering a future in web design. I will also be exploring other job opportunities in the computer science field throughout the rest of this semester. Even if I don&rsquo;t choose web design as my career, the skills I have learned will be very useful if I ever start a business and need to make a website for it.&lt;/p&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Header.">     &lt;h5&gt;How did I make this website?&lt;/h5&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="The image1 class creates the container for the image and links to the CSS code that makes it zoom in when hovered over. The a href object makes it so that when the picture is clicked on it links the user to the full size image. The img src shows the actual picture on the website while the style sets the size of it.">     &lt;div class="image1"&gt;&lt;a href="./images/Draft.jpg"&gt;&lt;img src="./images/Draft.jpg" style="width:200px;"alt="Sketch"&gt;&lt;/a&gt;&lt;/div&gt;</a>
+     <a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Paragraph.">&lt;p&gt;The first thing I did was research popular website designs and I made a sketch of how I wanted to design mine. Although I heavily changed the design, it provided me with a good place to begin learning. I made this website using mostly HTML and CSS. These are two of the most essential coding languages used in web development. HTML is used to structure and add basic things to the page, while CSS is used to style those things and make the webpage unique. HTML was much easier to get the hang of than CSS because CSS has many different modifiers that are hard to remember without looking up.&lt;/p&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Header.">    &lt;h5&gt;What will I put on this website in the future?&lt;/h5&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Parapgraph.">    &lt;p&gt;I will be showcasing the rest of my POL projects and I will be constantly improving and changing the website design where I see fit.&lt;/p&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Header.">    &lt;h5&gt;What did I learn while making this website?&lt;/h5&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Paragraph.">    &lt;p&gt;I gained an intermediate knowledge of website development in CSS and HTML. I hope to teach myself javascript next so I can have more interactive things on my website. I also gained insight on the way that developers need to think to solve problems.&lt;/p&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Header.">    &lt;h5&gt;How much time have I spent designing this website?&lt;/h5&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Paragraph.">    &lt;p&gt;I spent about 15 hours in total learning HTML and CSS and about 15-20 hours actually coding and designing the website. It was really easy to get lost in my project because I like the challenge.</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Header.">    &lt;h5&gt;What are the advantages and disadvantages of a web design career?&lt;/h5&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Paragraph.">    &lt;p&gt;Web design is certainly a fun and interesting career, but of all the jobs in the computer science field, web design is one of the lowest paying. Regardless, this is a passion of mine and I will leave it open as an option for the future.&lt;/p&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Closes the text container.">&lt;/div&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Closes the body class.">&lt;/body&gt;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Closes the HTML document.">&lt;/html&gt;</a>
+</pre>
+<?prettify lang=css linenums=false?>
+<pre class="theme-turnip" style="line-height:130%; padding:15px;">
+	<span class="nocode"><h5 style="text-align:center;">CSS Code for POL 1 Page</h5></span>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This tells the browser how to render the text.">@charset "UTF-8";</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This creates the 'body' class. It overwrites the default body class so that I can use custom values and fonts.">body{</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the background to an image I have saved as greenvector.jpg.">     background:url(../images/greenvector.jpg);</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This tells the browser to repeat the background image when scrolling down the page.">     background-repeat:repeat;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the background image to take up the entire page.">     background-size:cover;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Font-family sets the font to Josefin Slab and the style to serif.">     font-family: 'Josefin Slab', serif;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="These lines ensure that the page looks the same in different browsers by overwriting any default values to 0.">     margin:0;
+     padding:0;</a>
+}
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This creates the image1 subclass of the default div class.">div.image1{</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This adds a padding between the text and the image.">     padding-left:1px;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="float:right forces the image onto the right side of the page.">     float: right;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This connects to the div.image1.hover class and sets all transitions in that class to last for .2 seconds and the style to ease in and out.">     transition: all .2s ease-in-out;</a>
+}
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This tells the browser what to do when the image1 class is hovered over.">div.image1:hover{</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This tells the browser to increase the size of the image by 2.5 times and to move it 60 pixels to the left so that it isn't cut off.">     transform:scale(2.5,2.5) translateX(-60px);</a>
+}
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This creates the text container and gives it a white background, a grey border, and sets the margins for the text.">div.textcontainer{
+     height:auto;
+     margin-bottom:40px;
+     padding-left:8px;
+     padding-right:8px;
+     margin-top:20px;
+     margin-left:40px;
+     margin-right:40px;	
+     background-color:white;
+     border:#BBB 5px solid;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This overrides the default &lt;p&gt; class while inside the textcontainer object and sets the font style.">div.textcontainer p{
+     padding-left:15px;
+     padding-right:15px;
+     font-weight:400;
+     font-size:22px;
+     color:black;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This overrides the default &lt;h5&gt; class while inside the textcontainer object and sets the font style.">div.textcontainer h5{
+     font-size:32px;
+     padding-left:15px;
+     padding-right:15px;
+     font-family: 'Fredericka the Great', cursive;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the style for the date in the top right of the page.">
+.date{
+     padding-top:10px;
+     text-align:right;
+     font-size:15px;	
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the height, color, font, and positioning of the header. This excludes the &quot;DaveBecker&quot; part but includes the &quot;xyz&quot;.">.headerbackground{
+     height:60px;
+     background:#444;
+     text-align:left;
+     font-size:60px;
+     font-weight:700;
+     color:#999;
+     padding-top:5px;
+     border-bottom:#080 4px solid;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the cursor to the default arrow. This is needed because otherwise the whole header would have the click cursor when hovered over.">     cursor:default;</a>
+}
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This is where the &quot;DaveBecker&quot; part of the header is styled.">a.headerlink{
+     text-align:left;
+     padding-left:14px;
+     font-size:50px;
+     font-weight:700;
+     color:#0C0;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This stops the link cursor from appearing and instead uses the default pointer.">     cursor:default;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This removes the underline that is added by default to links.">     text-decoration: none;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets up the changing color transition and will be used in the headerlink:hover class.">     transition: color .4s;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the text to change color when hovered over.">a.headerlink:hover{
+     color: #999;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the style for the unordered list in the header menu. This does not include the dropdown menus.">.menuul{</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This removes the underline that is added by default to links.">     list-style-type: none;</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the style for the unordered list in the header menu. This does not include the dropdown menus.">     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     height:auto;
+     background-color: #444;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This aligns the menu buttons to the left of the page.">.menuli{
+     float:left;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the styling for the text in the buttons.">.menuli a, .dropbutton{
+     text-align:center;
+     font-size:25px;
+     display:block;
+     color:white;
+     padding: 10px 16px;
+     text-decoration: none;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Changes the color when the button is hovered over.">.menuli a:hover, .dropdown:hover .dropbutton {
+     background-color: #080;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="The dropdown-stuff refers to the buttons that appear under the main button when hovered over. A slight shadow is given to give a 3D effect.">.dropdown-stuff{
+     display:none;
+     font-size:25px;
+     position:absolute;
+     background-color:#444;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the styling for the text in the dropdown buttons.">.dropdown-stuff a{
+     color: white;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Changes the color when the buttons are hovered over.">.dropdown-stuff a:hover {
+     background-color: #999;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="Sets the dropdown menu to be vertically aligned.">.dropdown {
+     display: inline-block;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the dropdown menu to appear when hovered over.">.dropdown:hover .dropdown-stuff {
+     display: block;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="The footer is the black bar that appears on the bottom of some pages for better access to other pages.">.footer{
+     font-family: Josefin Slab;
+     font-size:16px;
+     font-color:white;
+     list-style-type: none;	
+     text-decoration: none;
+     color:white;
+     height:32px;
+     width:100%;
+     padding-bottom:2px;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This is the footer unordered list. This sets the overall height of the footer and a few other things.">.footer ul{
+     height:20px;
+     list-style-type: none;
+     overflow: hidden;
+     background-color: black;	
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This makes the footer list horizontal instead of vertical.">.footer li {
+     display: inline-block;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This sets the color and formatting of the text in the list.">.footer li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 4px 6px;
+     padding-left:10px;
+     text-decoration: none;
+}</a>
+<a onclick="return false;" data-toggle="tooltip" class="hovertext" title="This changes the text color to black and the background to white for each individual item when hovered over in the list.">.footer li a:hover{
+     background-color:white;	
+     color:black;
+}</a>
+</pre>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once all the coding for the website was completed, the next step was to find a company to host the website. There are two components needed in order to bring a website online, a hosting server and a domain name. For the hosting server I went with a basic free one from <a href="https://000webhost.com">000webhost.com</a>. For the domain name I chose <a href="http://davebecker.xyz"> davebecker.xyz</a> because .xyz domains are very cheap compared to the popular ones like .com and .net.
+</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this POL, I learned how to implement modifiable templates and I refined my skills with the main two coding languages used in web design. For the code snippets I implemented a project called Prettify created by Google and for the pop ups I implemented a series of templates called Bootstrap.
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In my next POL I will be exploring another two languages and beginning to learn how to use databases that store things like usernames, passwords, and other information.
+</p>
+<div style="height:40px;"></div>
+<h4>Core 4 Questions</h4>
+<br />
+<h6>What do I know now that I didn't know before this part of the research/workshop/project?</h6>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before the second POL I did not know how to implement outside code and incorporate it with my own. In this POL I learned how to add bootstrap templates and modify them.</p>
+
+<h6>What questions do I now have?</h6>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I want to know how to use databases to store things like usernames, passwords, scores, etc. I also would like to learn how to use the PHP programming language and maybe Javascript too.</p>
+<h6>What related topics might I need to know more about to become an expert in this topic or area?</h6>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I need to know more about how different programming languages work together to produce the website. I will also need to learn about different job opportunities in this field.</p>
+<h6>How can I share my learning with a wider audience (and why would this method be the strongest choice?)</h6>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I feel as though since my POL is a website that is accessible to everyone there isn't really a way to widen the audience. In such a tech-driven society almost everyone has the ability to type in the link and view my work. However, I could share the link with my classmates and ask for feedback or I can assist other classmates with web design if they need help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+</body>
+</html>

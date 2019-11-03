@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<title>Alternate Home Page</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+/*Example==font-family: 'Fredericka the Great', cursive;*/
+#alternativeTitleBackground{
+	font-family:"Josefin Slab";
+	height:80px;
+	text-align:left;
+	font-size:60px;
+	font-weight:bold;
+	color:#0C3;
+	cursor: default;
+	padding-top:20px;
+	border: 2px #0C3 solid;
+	background-color:white;
+}
+a{
+	display:inline;
+	text-align:right;
+	font-size:25px;
+	font-weight:bold;
+	color:#0C4;
+	transition: color .4s;
+	text-decoration: none;
+}
+a:hover{
+	color: #999;
+}
+ul{
+	list-style-type: none;
+	overflow: hidden;
+	margin:0px;
+	padding-top:20px;
+	padding-right:30px;
+	float:right;
+	display:inline;
+}
+li{
+	display:inline;	
+	margin:0;
+}
+.text {
+	letter-spacing:4px;
+	fill: none;
+	stroke-width: 6;
+	stroke-linejoin: round;
+	stroke-dasharray: 70 330;
+	stroke-dashoffset: 0;
+	animation: stroke 12s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+	stroke: grey;
+	animation-delay: -2.4s;
+}
+.text:nth-child(5n + 2) {
+	stroke: #0C3;
+	animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 3) {
+	stroke: grey;
+	animation-delay: -7.2s;
+}
+
+.text:nth-child(5n + 4) {
+	stroke: #0C3;
+	animation-delay: -9.6s;
+}
+
+.text:nth-child(5n + 5) {
+	stroke: grey;
+	animation-delay: -12s;
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+svg {
+	position: absolute;
+	width: 266px;
+	height: 161px;
+	top: 6px;
+	left: 8px;
+}
+body{
+	background:url(./images/greenvector.jpg);
+	background-repeat:repeat;
+	background-size:cover;
+	font-family: 'Josefin Slab', serif;
+	margin:0;
+	padding:0;
+	height:100%;
+	overflow:hidden;
+}
+</style>
+</head>
+<body>
+<svg>
+
+  <!-- Symbol -->
+  <symbol id="s-text" style="font: 90px Open Sans, Impact;">
+    <text text-anchor="left"
+          x="0%" y="55%">
+      DAVE
+    </text>
+  </symbol>  
+
+  <!-- Duplicate symbols -->
+  <use xlink:href="#s-text" class="text"
+       ></use>
+  <use xlink:href="#s-text" class="text"
+       ></use>
+  <use xlink:href="#s-text" class="text"
+       ></use>
+  <use xlink:href="#s-text" class="text"
+       ></use>
+  <use xlink:href="#s-text" class="text"
+       ></use>
+
+
+</svg>
+<div id="alternativeTitleBackground" style="display:block;">
+<ul>
+<li> <a href="index.html">Home</a></li>
+    <li> <a href="about.html">About</a></li>
+    <li> <a href="projects/project1.html">POL 1</a></li>
+    <li> <a href="projects/project2.html">POL 2</a></li>
+    <li> <a href="projects/project3.html">POL 3</a></li>
+    <li> <a href="references">References</a></li>
+    <li> <a href="snake.php">Snake</a></li>
+</li>
+</ul>
+</div>
+<h1 style="text-align:center;padding-top:30px;">Welcome to my website!</h1>
+</body>
+</html>

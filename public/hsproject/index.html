@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="UTF-8">
+	<title>Dave's Website</title>
+    <script src="https://use.fontawesome.com/1f4f3a0067.js"></script>
+	<link rel="stylesheet" type="text/css" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" title="tree" href="css/tree.css">
+    <link rel="alternate stylesheet" type="text/css" title="violet" href="css/violet.css">
+    <link rel="alternate stylesheet" type="text/css" title="sunglow" href="css/sunglow.css">
+    <link rel="alternate stylesheet" type="text/css" title="lime" href="css/lime.css">
+    <link rel="alternate stylesheet" type="text/css" title="dark" href="css/dark.css">
+	<script src="js/styleswitch.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".btn").each(function(){
+       		$(this).click(function(){
+         		$(this).addClass("active");
+          		$(this).siblings().removeClass("active");
+       			});
+    	});
+		var cookie=getCookie("mysheet");
+		if(cookie=="tree"||cookie=="null"){
+			$(".tree").addClass("active");	
+		}
+		else if(cookie=="dark"){
+			$(".dark").addClass("active");
+		}
+		else if(cookie=="violet"){
+			$(".violet").addClass("active");
+		}
+		else if(cookie=="sunglow"){
+			$(".sunglow").addClass("active");
+		}
+		else if(cookie=="lime"){
+			$(".lime").addClass("active");
+		}
+	})
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="overlay"></div>
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a class="sidebar-label" href="http://dave-becker.com"></a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="about.html"><i class="fa fa-fw fa-user-circle-o"></i> About</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-file-o"></i> Presentations <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Presentations</li>
+                    <li><a href="projects/project1.html">Presentation 1</a></li>
+                    <li><a href="projects/project2.html">Presentation 2</a></li>
+                    <li><a href="projects/project3.html">Presentation 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="references"><i class="fa fa-fw fa-bookmark"></i> References</a>
+                </li>
+                <li>
+                    <a href="snake.php"><i class="fa fa-fw fa-gamepad"></i> Snake</a>
+                </li>
+                <li>
+                    <a href="leaderboards.php"><i class="fa fa-fw fa-globe"></i> Snake Leaderboards</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-sliders"></i> Other Layouts <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Experimental Layouts</li>
+                    <li><a href="indexold.html">Layout 1</a></li>
+                    <li><a href="transitions.html">Layout 2</a></li>
+                    <li><a href="index2.html">Layout 3</a></li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>
+            <div class="container">
+                <div class="row" style="margin-left:100px;margin-right:100px;">
+                        <h1 class="page-header">Dave Becker's Website</h1>
+                        <h4 style="text-align:center; margin-bottom:30px">Click a button to change themes</h4>
+                        <div class="btn-container" role="group">
+                        	<button type="button" id="tree" class="btn btn-primary btn-lg outline tree" onclick="chooseStyle('tree', 14)">Tree Green</button>
+                            <button type="button" id="dark" class="btn btn-primary btn-lg outline dark" onclick="chooseStyle('dark', 14)">Dark</button>
+                            <button type="button" id="violet" class="btn btn-primary btn-lg outline violet" onclick="chooseStyle('violet', 14)">Violet</button>
+                            <button type="button" id="sunglow" class="btn btn-primary btn-lg outline sunglow" onclick="chooseStyle('sunglow', 14)">Sunglow</button>
+							<button type="button" id="lime" class="btn btn-primary btn-lg outline lime" onclick="chooseStyle('lime', 14)">Lime Purple</button>
+                            </div>
+                        <h3>What is this website?</h3>
+                        <p>This website was created to showcase my learning throughout my English 4 semester. After starting with a very weak understanding of web design, I have taught myself how to code in many of the different languages required, I have learned about all the different types of website layouts, and I have begun stepping into the more complex Javascript and PHP languages. I plan to include research regarding web design careers in the near future. Web design is a passion of mine and many, many hours have been put into my various websites. I hope you enjoy it!</p>
+                        <div style="text-align:center;">
+                        <a href="http://dave-becker.com" style="text-decoration:none;padding-bottom:50px;"><button type="button" class="btn btn-primary btn-lg" style="width:100%; text-transform:none;">Resume</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+</body>
+</html>
