@@ -1,4 +1,7 @@
 #!/bin/bash
 
 firebase deploy
+
+git add .
+git commit -m "Commited via auto-deploy script"
 git push
