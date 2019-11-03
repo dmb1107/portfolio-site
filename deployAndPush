@@ -1,0 +1,4 @@
+#!/bin/bash
+
+firebase deploy
+git push
