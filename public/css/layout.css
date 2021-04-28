@@ -41,10 +41,10 @@ body { background-color: #0f0f0f; }
    --javascript: 80%;
    --swift: 90%; 
    --java: 85%;
-   --css: 80%;
-   --c: 70%;
+   --c: 50%;
+   --django: 70%;
    --react: 25%;
-   --rails: 35%;
+   --rails: 40%;
    --linux: 65%;
 }
 
@@ -364,10 +364,10 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: java 2s ease;
   	-webkit-animation: java 2s ease;
 }
-.css {
-  	width: var(--css);
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+.django {
+  	width: var(--django);
+  	-moz-animation: django 2s ease;
+  	-webkit-animation: django 2s ease;
 }
 .c {
   	width: var(--c);
@@ -402,9 +402,9 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: var(--java);  }
 }
-@-moz-keyframes css {
+@-moz-keyframes django {
   0%   { width: 0px;  }
-  100% { width: var(--css);  }
+  100% { width: var(--django);  }
 }
 @-moz-keyframes c {
   0%   { width: 0px;  }
@@ -435,9 +435,9 @@ ul#nav li.current a { color: #F06000; }
    0%   { width: 0px;  }
    100% { width: var(--java);  }
 }
-@-webkit-keyframes css {
+@-webkit-keyframes django {
    0%   { width: 0px;  }
-   100% { width: var(--css);  }
+   100% { width: var(--django);  }
 }
 @-webkit-keyframes c {
    0%   { width: 0px;  }
